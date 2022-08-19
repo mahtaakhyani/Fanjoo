@@ -1,0 +1,382 @@
+{% load static %}
+<!-- Styles -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>فنجو - همراه شما در مسیر مهارت آموزی</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static 'images/icons/fevicon.png' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/themify/themify-icons.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animate/animate.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/css-hamburgers/hamburgers.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animsition/css/animsition.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/select2/select2.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/daterangepicker/daterangepicker.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/slick/slick.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/lightbox2/css/lightbox.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/main.css' %} ">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+<header>
+
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="https://www.fanjou.ir">
+							<img src=" {% static 'images/icons/logo.png' %} " alt="LOGO">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+
+
+							<ul class="main_menu">
+
+								<span class="divsbt">
+								<div style="float: left;"><a href="https://www.fanjou.ir/signup" class="sabt">ثبت نام</a></div>
+								|
+								<div style="float: right;"><a href="https://www.fanjou.ir/account" class="vrd">ورود</a></div>
+								</span>
+
+								<li>
+									<a href="#">حرفه و مهارت</a>
+								</li>
+
+								<li>
+									<a href="#">دوره ها</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir/blog">مجله فنجو</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir">خانه</a>
+								</li>
+
+								
+								
+
+							</ul>
+
+							
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">خانه </a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">مجله فنجو</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">دوره ها</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">حرفه و مهارت</a>
+			</li>
+
+			
+				<li class="t-center">
+				<!-- Button3 -->
+				<!-- <a href="#" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					
+				</a> -->
+				<div class="divsbt2">
+				<a href="#" class="vrd" style="font-size: 1.25vw">ورود</a>
+				|
+				<a href="#" class="sabt" style="font-size: 1.25vw">ثبت نام</a>
+				</div>
+				</li>
+
+				
+
+					<input type="text" name="search" class="search" placeholder="! سرچ کن">
+					<button class="submit" type="submit">search</button>
+
+						
+						<li class="social">
+						
+						<a href="#"><i class="fa fa-facebook m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram m-l-10" href="https://www.instagram.com" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-telegram m-l-10" href="https://www.telegram.com@Fanjou" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus m-l-10" href="https://plus.google.com/" aria-hidden="true"></i></a>
+
+					</li>
+
+						
+			</ul>
+
+
+		
+
+
+
+
+		
+
+
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			
+
+			<!-- Gallery -->
+			<div class="wrap-gallery-sidebar flex-w">
+				
+
+			</div>
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url( {% static 'images/slide1-01.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							
+
+
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+							
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url( {% static 'images/slide1-02.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+					
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url( {% static 'images/slide1-03.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" style="color: black;" data-appear="rotateInDownLeft">
+							
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" style="color: black;" data-appear="rotateInUpRight">
+							
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick1-dots"></div>
+		</div>
+	</section>
+
+	<!-- Welcome -->
+
+
+<section class="mindmap p-b-50">
+
+		<div class="bo9 bo-rad-11 m-l-910 m-r-45 m-t-50 p-30 bgwhite" id="charttext">
+
+		<h2 style="direction: rtl; text-align: right; font-weight: 20; font-size: 32px;
+    			   padding-bottom: 23px;">فنجو چیست؟</h2>
+
+		<p style="direction: rtl; text-align: right;">فنجو پلتفرمیه تا به شما کمک کنه در عین پیدا کردن مسیر حرفه ایتون تو زندگی،‌ از یادگیری اون هم لذت ببرین و به شیوه های مختلف از مهارتتون کسب درآمد کنید.</p>
+
+		<a href=" {% static '#section-chef' %} " style="font-size:17px; z-index: 10; position: relative;"><u>< بیشتر </u></a>
+	</div>
+</section>
+	<div class="chartdiv p-l-63" id="chartdiv"></div>
+
+
+<section class="section-chef bgwhite p-t-115 p-b-95" id="section-chef">
+		<div class="container t-center" style="margin-top: -75px;">
+			<span class="tit7 t-center" style="font-size:14px">
+				<p>چه کاری قراره انجام بدیم؟</p>
+			</span>
+
+			<h3 class="tit2 t-center m-b-50 m-t-5" style="color: #67b7dd">
+				و چجوری به درآمد برسیم؟
+			</h3>
+
+			<div class="row">
+				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+					<div class="blo5 pos-relative p-t-40">
+						<div class="pic-blo5 size16 bo2 wrap-cir-pic hov-img-zoom ab-c-t">
+							<a href="#"><img src=" {% static 'images/learntoearn.jpg' %} " alt="IGM-AVATAR"></a>
+						</div>
+
+						<div class="text-blo5 size29 t-center bo-rad-10 bo9 p-t-50 p-l-35 p-r-35 p-b-30">
+							<a href="#" class="txt26 dis-block p-b-20">
+								!یادبگیر و درآمد کسب کن
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+					<div class="blo5 pos-relative p-t-40">
+						<div class="pic-blo5 size16 bo2 wrap-cir-pic hov-img-zoom ab-c-t">
+							<a href="#"><img src=" {% static 'images/uploadAndSell.jpg' %} " alt="IGM-AVATAR"></a>
+						</div>
+
+						<div class="text-blo5 size29 t-center bo-rad-10 bo9 p-t-50 p-l-35 p-r-35 p-b-30">
+							<a href="#" class="txt26 dis-block p-b-20">
+								!ویدیو آموزشی آپلود کن و بفروش 
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+					<div class="blo5 pos-relative p-t-40">
+						<div class="pic-blo5 size16 bo2 wrap-cir-pic hov-img-zoom ab-c-t">
+							<a href="#"><img src=" {% static 'images/strongCV.jpg' %} " alt="IGM-AVATAR"></a>
+						</div>
+
+						<div class="text-blo5 size29 t-center bo-rad-10 bo9 p-t-50 p-l-35 p-r-35 p-b-30">
+							<a href="#" class="txt26 dis-block p-b-20">
+								رزومه اتو قوی تر کن و راحتتر استخدام شو
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+					<div class="blo5 pos-relative p-t-40">
+						<div class="pic-blo5 size16 bo2 wrap-cir-pic hov-img-zoom ab-c-t">
+							<a href="#"><img src=" {% static 'images/pointAndDiscount.jpg' %} " alt="IGM-AVATAR"></a>
+						</div>
+
+						<div class="text-blo5 size29 t-center bo-rad-10 bo9 p-t-50 p-l-35 p-r-35 p-b-30">
+							<a href="#" class="txt26 dis-block p-b-20">
+								!امتیاز جمع کن و تخفیف بگیر
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-lg-4 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+					<div class="blo5 pos-relative p-t-40">
+						<div class="pic-blo5 size16 bo2 wrap-cir-pic hov-img-zoom ab-c-t">
+							<a href="#"><img src=" {% static 'images/liveJob1.jpeg' %} " alt="IGM-AVATAR"></a>
+						</div>
+
+						<div class="text-blo5 size29 t-center bo-rad-10 bo9 p-t-50 p-l-35 p-r-35 p-b-30">
+							<a href="#" class="txt26 dis-block p-b-10">
+								!علاقتو پیدا کن و ازش لذت ببر
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Chart Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/jquery/jquery-3.2.1.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/animsition/js/animsition.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/popper.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/select2/select2.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/moment.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/daterangepicker.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/slick/slick.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'js/slick-custom.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/parallax100/parallax100.js' %} "></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/countdowntime/countdowntime.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/lightbox2/js/lightbox.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script src=" {% static 'js/main.js' %} "></script>
+	<script src=" {% static 'js/chart.js' %} "></script>
+
+</body>
+</html>

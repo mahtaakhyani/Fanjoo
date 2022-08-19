@@ -1,0 +1,66 @@
+@import url('http://www.saher-team.com/api/CSS3/normalize.v3.0.2.css');
+
+
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  position: absolute;
+}
+
+path {
+  stroke: #4f89af;
+  /* stroke-width: 5px; */
+  cursor: pointer;
+  -webkit-transition: stroke-width 20ms,fill 250ms;
+          transition: stroke-width 20ms,fill 250ms;
+}
+path:hover {
+  /* stroke-width: 10px; */
+  fill: rgb(36, 38, 41);
+}
+
+text {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+polyline {
+  fill: none;
+  stroke: #4f89af;
+  stroke-width: 2px;
+  stroke-dasharray: 8px;
+}
+
+
+.infographic-title {
+  font-size: 36px;
+  display: inline-block;
+  line-height: 32px;
+  font-weight: 100;
+  width: 100%;
+  text-align: centergb(139, 113, 40)r;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  margin-top: 50px;
+
+}
+.infographic-title .inner-title {
+  color: #67b7dd;
+  display: inline-block;
+  letter-spacing: -2.5px;
+  text-align: left;
+}
+.infographic-title .inner-title span {
+  padding-left: 60px;
+  padding-right: 10px;
+}
+.infographic-title .inner-title strong {
+  padding-right: 10px;
+}
+.infographic {
+  margin-top: 50px;
+text-align: center;
+transition: all 0.75s ease-in-out;
+}

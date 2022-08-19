@@ -1,0 +1,700 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<META HTTP-EQUIV=”Content-Language” CONTENT=”fa”>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- mobile metas -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>مجله فنجو</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!DOCTYPE html>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/bootstrap/css/bootstrap.min.css' %} ">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/animate/animate.css' %} ">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/animsition/css/animsition.min.css' %} ">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/slick/slick.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static '/fonts/themify/themify-icons.css' %} ">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/lightbox2/css/lightbox.min.css' %} ">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/main.css' %} ">
+<meta name="author" content="">
+<!-- site icons -->
+<link rel="icon" href=" {% static '/images/fevicon/fevicon.gif' %} " type="image/gif" />
+<!-- bootstrap css -->
+<link rel="stylesheet" href=" {% static '/css/bootstrap.min.css' %} " />
+<!-- Site css -->
+<link rel="stylesheet" href=" {% static '/css/style.css' %} " />
+<!-- responsive css -->
+<link rel="stylesheet" href=" {% static '/css/responsive.css' %} " />
+<!-- colors css -->
+<link rel="stylesheet" href=" {% static '/css/colors1.css' %} " />
+<!-- custom css -->
+<link rel="stylesheet" href=" {% static '/css/custom.css' %} " />
+<!-- wow Animation css -->
+<link rel="stylesheet" href=" {% static '/css/animate.css' %} " />
+<!-- revolution slider css -->
+<link rel="stylesheet" type="text/css" href=" {% static '/revolution/css/settings.css' %} " />
+<link rel="stylesheet" type="text/css" href=" {% static '/revolution/css/layers.css' %} " />
+<link rel="stylesheet" type="text/css" href=" {% static '/revolution/css/navigation.css' %} " />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+
+
+	<header>
+	
+	
+
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href=" {% static 'https://www.fanjou.ir/blog' %} ">
+							<img src=" {% static '/images/icons/logo.png' %} " alt="LOGO">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+
+
+							<ul class="main_menu">
+
+								<span class="divsbt">
+								<a href="https://www.fanjou.ir/account" class="vrd">ورود</a>
+								|
+								<a href="https://www.fanjou.ir/signup" class="sabt">ثبت نام</a>
+								</span>
+
+								<li>
+									<a href="#">حرفه و مهارت</a>
+								</li>
+
+								<li>
+									<a href="#">دوره ها</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir/blog">مجله فنجو</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir">خانه</a>
+								</li>
+
+								
+								
+
+							</ul>
+
+							
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-5">
+				<a href="https://www.fanjou.ir" class="txt19">خانه </a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="https://www.fanjou.ir/blog" class="txt19">مجله فنجو</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">دوره ها</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">حرفه و مهارت</a>
+			</li>
+
+			
+				<li class="t-center">
+				<!-- Button3 -->
+				<!-- <a href="#" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					
+				</a> -->
+				<div class="divsbt2">
+				<a href="https://www.fanjou.ir/account" class="vrd" style="font-size: 1.25vw">ورود</a>
+				|
+				<a href="https://www.fanjou.ir/signup" class="sabt" style="font-size: 1.25vw">ثبت نام</a>
+				</div>
+				</li>
+
+				
+
+					<input type="text" name="search" class="search" placeholder="! سرچ کن">
+					<button class="submit" type="submit">search</button>
+
+						
+						<li class="social" style="margin-top: 30px">
+						
+						<a href="#"><i class="fa fa-facebook m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram m-l-10" href="https://www.instagram.com" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-telegram m-l-10" href="https://www.telegram.com@Fanjou" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus m-l-10" href="https://plus.google.com/" aria-hidden="true"></i></a>
+
+					</li>
+
+						
+			</ul>
+
+
+		
+
+
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			
+
+			<!-- Gallery -->
+			<div class="wrap-gallery-sidebar flex-w">
+				
+
+			</div>
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url( {% static '/images/slide1-01.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							
+
+
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+							
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url( {% static '/images/slide1-02.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+					
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url( {% static '/images/slide1-03.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" style="color: black;" data-appear="rotateInDownLeft">
+							
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" style="color: black;" data-appear="rotateInUpRight">
+							
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
+							<!-- Button1 -->
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick1-dots"></div>
+		</div>
+	</section>
+
+
+
+	
+
+
+<!-- section -->
+<div class="section padding_layout_1 service_list">
+  <div class="container">
+    <div class="row" style="
+    width: 120%;
+    float:  right;
+    margin-left: 850px;
+    direction: rtl;
+    text-align: right;
+">
+            <div class="col-md-3" style=" direction: rtl;">
+        <div class="side_bar">
+          <div class="side_bar_blog">
+            <h4 class="tit7"  style="direction: rtl; float: right;">جستجو</h4>
+            <div class="side_bar_search">
+              <div class="input-group stylish-input-group">
+                <input class="form-control txt4" placeholder="جستجو" type="text">
+                <span class="input-group-addon">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="side_bar_blog">
+            <h4 class="tit7">دسته بندی ها</h4>
+            <div class="categary" style="margin-right: -100px; color: #000">
+              <ul>
+                <li><a href=" {% static '/it_data_recovery.html' %} "><i class="fa fa-angle-left"></i> شغل ها</a></li>
+                <li><a href=" {% static '/it_computer_repair.html' %} "><i class="fa fa-angle-left"></i> معرفی رشته های دانشگاهی</a></li>
+                <li><a href=" {% static '/it_mobile_service.html' %} "><i class="fa fa-angle-left"></i> مهارت های نرم</a></li>
+                <li><a href=" {% static '/it_network_solution.html' %} "><i class="fa fa-angle-left"></i> اطلاعات عمومی محیط کار</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="side_bar_blog" style="direction: rtl; float: left;">
+            <h4>پربازدیدترین مطالب</h4>
+            <div class="categary">
+              <ul>
+                <li><a href=" {% static '/it_data_recovery.html' %} ">معرفی گرایش های ارشد مهندسی شیمی <i class="fa fa-angle-left"></i> </a> </li>
+                <li><a href=" {% static '/it_computer_repair.html' %} "> معرفی گرایش های ارشد مهدسی کامپیوتر <i class="fa fa-angle-left"></i></a></li>
+                <li><a href=" {% static '/it_mobile_service.html' %} "> لیست سایت ها و کانال های کاربردی برای یادگیری زبان پایتون <i class="fa fa-angle-left"></i></a></li>
+                <li><a href=" {% static '/it_network_solution.html' %} "> برنامه نویسی چه تاثیری بر زندگی ما دارد؟<i class="fa fa-angle-left"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="side_bar_blog">
+            <h4>هشتگ ها</h4>
+            <div class="tags">
+              <ul>
+                <li><a href="#">فنی</a></li>
+                <li><a href="#">مصاحبه</a></li>
+                <li><a href="#">گرایش</a></li>
+                <li><a href="#">نرم افزار</a></li>
+                <li><a href="#">شغل</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="blog_header"><h>آخرین مقالات</h>
+          <div class="line"></div>
+        </div>
+        <div class="row" style="max-width: 104%;padding: 24px;margin-top: -15px;">
+          <div class="col-md-6 service_blog margin_bottom_50">
+            <div class="full">
+
+              <div class="blog_section">
+            <div class="blog_feature_img"> <img class="img-responsive" src=" {% static '/images/it_service/Computer-Engineer-Job.jpg' %} " alt="#"> </div>
+            <div class="blog_feature_cantant">
+              <p class="blog_head">گرایش های ارشد مهندسی کامپیوتر</p>
+              <div class="post_info">
+                <ul>
+                  <!-- <li><i class="fa fa-user" aria-hidden="true"></i> Marketing</li> -->
+                  <li><i class="fa fa-comment" aria-hidden="true"></i> ۲۰</li>
+                  <li><i class="fa fa-calendar" aria-hidden="true"></i> ۱۲ خرداد ۹۹</li>
+                </ul>
+              </div>
+              <p class="txt5">
+🟣 هوش مصنوعی
+🟣 نرم افزار
+🟣 معماری کامپیوتر
+
+⁉️هر کدوم اصلا چی هستن و چه کاربردایی دارن؟!
+
+✅ منِ دانشجو تو این رشته ها، چه مهارت‌ها و دروسیو تو طول تحصیلش یاد میگیرم؟!
+بازار کار هر کدوم تو ایران چیه و چه شکلیه؟! چه فرصت شغلیایی میتونم داشته باشم با هر گرایش؟!
+چه واحدایی باید بگذرونم؟!
+</p>
+<div id="part1" class="panel-collapse collapse txt5" ><p>
+📌نرم افزار:
+در این گرایش دانشجویان با سیستم‌ عامل های پیشرفته، بانک های اطلاعاتی، برنامه‌نویسی پیشرفته و تحت وب، 
+الگوریتم‌های پردازش موازی و ...آشنا می‌شوند.
+
+📌هوش مصنوعی:
+هوش مصنوعی به طور کلی ، به سیستم هایی گفته می شود که واکنش های مشابه رفتارهای هوشمند انسانی از خود نشان می دهند.
+هدف این گرایش، هوشمندسازی کامپیوترها و سیستم های مبتنی بر کامپیوتر، با الهام از موجودات زنده و به خصوص انسان است.
+
+
+📌 معماری کامپیوتر:
+ در این گرایش، دانشجویان با معماری‌های پیشرفته کامپیوتر و ابر رایانه‌ها شبکه‌های کامپیوتری گسترده، پردازش تصویر و طراحی سیستم‌های تحمل‌پذیر خطا و ... آشنا می‌شوند.
+
+
+
+📌شبكه:
+
+دانشجویان رشته ارشد شبکه‌های کامپیوتری در طول تحصیل به مطالعه و شناخت انواع معماری‌های رایج در شبکه‌های کامپیوتری، سیستم های توزیع شده، ارزیابی کارایی شبکه‌های کامپیوتری، طراحی ساز و کارهای برگرفته از طبیعت برای مدیریت شبکه و... می‌پردازند
+
+
+📌رايانش امن:
+
+گرایش رایانش امن را گرایش امنیت اطلاعات نیز می‌نامند. هدف از امنیت اطلاعات این است که ذخیره، تبدیل، پردازش، انتقال و بازیابی اطلاعات به شکلی مطمئن و امن انجام پذیرد و...
+
+📌 مهندسي الگوريتم ها و محاسبات:
+
+ در گرایش مهندسی الگوریتم ها و محاسبات که یک گرایش جدید است، دانشجویان با الگوریتم‌های توزیعی و پیشرفته، ریاضیات پیشرفته کامپیوتری و ... آشنا می‌شوند  </p></div>
+              <div class="bottom_info">
+                <div id="shr" class="pull-left">
+                  <div class="social_icon">
+                    <ul>
+                      <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twi"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li class="pint"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                      <li><a class="fa fa-telegram" href="https://t.me/fanjou" title="Telegram" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                  <div class="shr pull-left">به اشتراک گذاری: </div>
+                </div>
+                <div class="pull-right"><a class="read_more" data-toggle="collapse" href=" {% static '/part1' %} ">بیشتر بخوانید <i class="fa fa-angle-left"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-6 service_blog margin_bottom_50">
+        <div class="full">
+          <div class="blog_section">
+            <div class="blog_feature_img"> <img class="img-responsive" src=" {% static '/images/it_service/python.jpg' %} " alt="#"> </div>
+            <div class="blog_feature_cantant">
+              <p class="blog_head">🟡چرا باید برنامه نویسی یاد بگیریم؟!؟</p>
+              <div class="post_info">
+                <ul>
+                  <!-- <li><i class="fa fa-user" aria-hidden="true"></i> Marketing</li> -->
+                  <li><i class="fa fa-comment" aria-hidden="true"></i>۱۰</li>
+                  <li><i class="fa fa-calendar" aria-hidden="true"></i> ۵ تیر ۹۹</li>
+                </ul>
+              </div>
+              <p>
+یا بهتره بپرسیم،
+🔴برنامه نویسی رو زندگی روزمره‌مون چه تاثیری داره؟!
+
+🔻از استیو جابز نقل شده که:" همه باید برنامه‌نویسی برای کامپیوتر را بیاموزند...زیرا این به شما یاد میدهد که چگونه فکر کنید."
+
+⁉️واقعا کد زدن چه فوایدی داره؟!
+</p>
+<div id="part2" class="panel-collapse collapse" ><p>
+1⃣ کد زدن تفکر خلاق و ساختاربندی شده رو پرورش میده.
+وقتی که شما در برنامه‌نویسی با مشکلی مواجه میشین، نیاز دارین که به قطعات قابل حل کوچیک تقسیمش کنین.⛏
+یادگیری برنامه نویسی باعث ایجاد این توانایی و عادت تو شما میشه که مسیر خودتون از یه شرایط سخت یا یه مشکل رو، قدم به قدم و با نظم و ساختار به بیرون پیدا کنین.
+🔸در واقع، به مغزتون یاد میدین که هر مشکل رو به قطعات کوچیکتر بشکنه، تا بهتر بفهمتشون. منطقی‌تر فکر میکنین، و همین باعث میشه به راه حل های خلاقانه‌تری دست پیدا کنین!💡
+
+2⃣برنامه نویسی کارها رو برای شما ساده‌تر میکنه
+هیچ چیزی مثل کار با کامپیوتر نمیتونه طولانی‌ترین مسائل و سختترین کارها رو تو کوتاه‌ترین زمان و به ساده‌ترین روش انجام بده!
+
+3⃣برنامه نویسی باعث تقویت پشتکار و استمرار میشه
+وقتی شما برنامه‌نویسی رو یادمیگیرین، دیگه بیخیال بقیه موقعیتای سخت روزمره‌ی زندگیتون هم میشین؛ شما یادمیگیرین که بارها و بارها تلاش کنین،
+و صبور باشین، چون میدونین که همیشه یه راه حلی وجود داره و با مقداری تلاش حتما به دست میاد!💎
+
+ </p></div>
+             <div class="bottom_info">
+                <div id="shr" class="pull-left">
+                  <div class="social_icon">
+                    <ul>
+                      <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twi"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li class="pint"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                      <li><a class="fa fa-telegram" href="https://t.me/fanjou" title="Telegram" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                  <div class="shr pull-left">به اشتراک گذاری: </div>
+                </div>
+                <div class="pull-right"><a class="read_more" data-toggle="collapse" href=" {% static '/part2' %} ">بیشتر بخوانید <i class="fa fa-angle-left"></i></a></div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6 service_blog margin_bottom_50">
+        <div class="full">
+          <div class="blog_section">
+            <div class="blog_feature_img"> <img class="img-responsive" src=" {% static '/images/it_service/waterloo-university.jpg' %} " alt="#"> </div>
+            <div class="blog_feature_cantant">
+              <p class="blog_head">دانشگاه واترلو کانادا</p>
+              <div class="post_info">
+                <ul>
+                  <!-- <li><i class="fa fa-user" aria-hidden="true"></i> Marketing</li> -->
+                  <li><i class="fa fa-comment" aria-hidden="true"></i> ۱۴</li>
+                  <li><i class="fa fa-calendar" aria-hidden="true"></i> ۳۰ اردیبهشت ۹۹</li>
+                </ul>
+              </div>
+              <p>دانشگاه واترلو کانادا رتبه ۱۷۳ در دنیا و رتبه ۷ در میان دانشگاه‌های کانادا را دارد. همچنین بر اساس QSدر زمینه اشتغال فارغ‌التحصیلان دانشگاه‌ها، دانشگاه واترلو رتبه ۲۵ دنیا و رتبه دوم در کانادا را دارد.
+این دانشگاه کار خود را در سال ۱۹۵۷ با ۷۴ دانشجو شروع کرد و در حال حاضر حدود ۴۱۰۰۰ دانشجوی تمام‌وقت و نیمه‌وقت دارد. 
+</p>
+<div id="part3" class="panel-collapse collapse" ><p>
+همچنین سالانه بالای ۴۵۰۰۰ نفر در رشته‌های مجازی این دانشگاه ثبت‌نام می‌کنند. دانشکده علوم کامپیوتر و دانشکده مهندسی این دانشگاه رتبه دوم را در کانادا دارند. همچنین این دانشگاه ۲۸ بار به عنوان نو‌آورترین دانشگاه کانادا انتخاب شده است.
+
+✅پروژه‌های تحقیقاتی دانشگاه واترلو
+
+دانشگاه واترلو ۱۲‌امین دانشگاه جهان در زمینه جذب سرمایه برای تحقیقات است و سالانه حدود ۱۹۰ میلیون دلار سرمایه برای تحقیقات دریافت می‌کند. همچنین به طور متوسط استادان دانشگاه واترلو سالیانه ۱۶۳۰۰۰ دلار و دانشجویان تحصیلات تکمیلی ۳۵۰۰۰ دلار در سال برای انجام تحقیقات دریافت می‌کنند. دانشگاه واترلو دارای پیشرفته‌ترین آزمایشگاه‌ها و تجهیزات تحقیقاتی است و برای انجام پروژه‌های تحقیقاتی خود، هم از دولت و هم از منابع خصوصی و شرکت‌های مختلف کمک‌هزینه تحقیقاتی دریافت می‌کند. به عنوان مثال در سال ۲۰۱۹ دانشگاه واترلو ۱۵ میلیون دلار از شرکت هواوی برای تحقیقات دریافت کرد.
+دانشگاه واترلو ۴۱ مرکز تحقیقاتی را مدیریت می‌کند. مراکز مهمی که تحت نظر دانشگاه واترلو فعالیت می‌کنند عبارتند از:
+ 📌 مرکز تحقیقات کد‌نویسی
+ 📌 انستیتو نانو‌فناوری واترلو
+ 📌مرکز ریاضیات و محاسبات
+ 📌مرکز محاسبات کوانتوم
+ 📌مرکز علوم اعصاب</p></div>
+              <div class="bottom_info">
+                <div id="shr" class="pull-left">
+                  <div class="social_icon">
+                    <ul>
+                      <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twi"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li class="pint"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                      <li><a class="fa fa-telegram" href="https://t.me/fanjou" title="Telegram" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                  <div class="shr pull-left">به اشتراک گذاری: </div>
+                </div>
+                <div class="pull-right"><a class="read_more"  data-toggle="collapse" href=" {% static '/part3' %} ">بیشتر بخوانید <i class="fa fa-angle-left"></i></a></div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      <div class="col-md-6 service_blog margin_bottom_50">
+        <div class="full">
+          <div class="blog_section">
+            <div class="blog_feature_img"> <img class="img-responsive" src=" {% static '/images/it_service/chemeng.jpeg' %} " alt="#"> </div>
+            <div class="blog_feature_cantant">
+              <p class="blog_head">معرفی گرایش های ارشد مهندسی شیمی</p>
+              <div class="post_info">
+                <ul>
+                  <!-- <li><i class="fa fa-user" aria-hidden="true"></i> Marketing</li> -->
+                  <li><i class="fa fa-comment" aria-hidden="true"></i> ۳۶ </li>
+                  <li><i class="fa fa-calendar" aria-hidden="true"></i> ۱۵ اردیبهشت ۹۹</li>
+                </ul>
+              </div>
+              <p>
+📌طراحی فرآیند:
+در گرايش طراحي فرايند هدف اين است كه مواد اوليه كم ارزش را به محصولات با ارزش افزوده بالا تبديل كنيم. در اين گرايش با اصول طراحي واكنش هاي شيميايي و مدل سازي و شبيه سازي واكنش ها، جهت به دست آوردن توانایی طراحی فرآیندهای خاص، آشنا می‌شود.
+</p>
+<div id="part4" class="panel-collapse collapse" ><p>
+📌جدا سازی:
+داوطلبان اين گرايش فنون و تكنيكهايي براي جداسازي تركيبهاي مهم موجود در صنايع شيميايي را ياد ميگيرند.
+
+📌بیوتکنولوژی:
+دانشجويان گرايش بيوتكنولوژي، كاربرد فرآيندهاي زيستي در صنايع مختلف مرتبط با مهندسي شيمي را مورد مطالعه قرار مي دهند.هدف اين رشته تربيت متخصصاني است كه علاوه بر مسائل مهندسي شيمي با اصول 
+فرآيندهاي زيستي هم آشنا باشند. 
+❇️گرایش های مهندسی شیمی - بخش دوم
+
+📌مدل‌سازي، شبيه‌سازي و كنترل:
+   حاصل ادغام سه رشته‌ی مهندسی شیمی، کامپیوتر و برنامه نویسی، جهت استفاده کاربردی از نرم افزارها و هوش مصنوعی در راستای بیان ریاضی پدیده ها در مهندسی شیمی
+
+📌ترموسينتيك و كاتاليست:
+
+دارای دو شاخه ترمودینامیک، و سینتیک و کاتالیست ، که شاخه  دوم، بر نحوه و بهبود واکنش ها با استفاده از کاتالیست ها میپردازد.
+
+📌محيط زيست:
+.
+.
+.
+📌پليمر
+📌صنايع غذايی
+📌نانوفناوری
+📌داروسازی
+📌زيست پزشكی
+📌صنايع گاز
+📌صنايع شيميايي معدنی
+
+ </p></div>
+              <div class="bottom_info">
+                <div id="shr" class="pull-left">
+                  <div class="social_icon">
+                    <ul>
+                      <li class="fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="twi"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li class="pint"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                      <li><a class="fa fa-telegram" href="https://t.me/fanjou" title="Telegram" target="_blank"></a></li>
+                    </ul>
+                  </div>
+                  <div class="shr pull-left">به اشتراک گذاری: </div>
+                </div>
+                <div class="pull-right"><a class="read_more"  data-toggle="collapse" href=" {% static '/part4' %} ">بیشتر بخوانید <i class="fa fa-angle-left"></i></a></div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- </div> -->
+
+<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						تماس با ما
+					</h4>
+
+						<ul>
+						<li><p>آدرس : تهران - میدان انقلاب - خیابان انقلاب - خیابان ۱۶ آذر - سازمان مرکزی دانشگاه تهران</p></li>
+						<li><P>fanjouteam@gmail.com  :ایمیل </P></li>
+						<li><p>0912 339 5675  : تلفن</p></li>
+             			</ul>
+					
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						موضوعات 
+					</h4>
+
+					<div class="m-b-25 footer-menu">
+						<li><a href="#"><i class="fa fa-angle-left"></i>مجله فنجو</a></li>
+						<li><a href="#"><i class="fa fa-angle-left"></i>دوره ها </a></li>
+						<li><a href="#"><i class="fa fa-angle-left"></i>شغل ها </a></li>
+						<li><a href="#"><i class="fa fa-angle-left"></i>تست </a></li>
+             
+					</div>
+
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						برچسب ها
+					</h4>
+
+
+
+					<!-- Gallery footer -->
+					<div class="wrap-gallery-footer flex-w">
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+	</footer>
+<!-- end footer -->
+
+
+<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src=" {% static '/images/icons/video-16-9.jpg' %} " alt="IMG"></div>
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- js section -->
+<script src=" {% static '/js/jquery.min.js' %} "></script>
+<script src=" {% static '/js/bootstrap.min.js' %} "></script>
+<!-- menu js -->
+<script src=" {% static '/js/menumaker.js' %} "></script>
+<!-- wow animation -->
+<script src=" {% static '/js/wow.js' %} "></script>
+<!-- custom js -->
+<script src=" {% static '/js/custom.js' %} "></script>
+<!-- revolution js files -->
+<script src=" {% static '/revolution/js/jquery.themepunch.tools.min.js' %} "></script>
+<script src=" {% static '/revolution/js/jquery.themepunch.revolution.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.actions.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.carousel.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.kenburn.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.layeranimation.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.migration.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.navigation.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.parallax.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.slideanims.min.js' %} "></script>
+<script src=" {% static '/revolution/js/extensions/revolution.extension.video.min.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/jquery/jquery-3.2.1.min.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/animsition/js/animsition.min.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/bootstrap/js/popper.js' %} "></script>
+	<script type="text/javascript" src=" {% static '/vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/select2/select2.min.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/daterangepicker/moment.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static '/vendor/daterangepicker/daterangepicker.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/slick/slick.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static '/js/slick-custom.js' %} "></script>
+	<script type="text/javascript" src=" {% static '/vendor/parallax100/parallax100.js' %} "></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+
+	<script type="text/javascript" src=" {% static '/vendor/countdowntime/countdowntime.js' %} "></script>
+
+	<script type="text/javascript" src=" {% static '/vendor/lightbox2/js/lightbox.min.js' %} "></script>
+
+	<script src=" {% static '/js/main.js' %} "></script>
+<!-- map js -->
+
+<!-- end google map js -->
+</body>
+</html>

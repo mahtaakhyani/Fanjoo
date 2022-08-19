@@ -1,0 +1,263 @@
+<svg width="162.2" height="69.5" xmlns="http://www.w3.org/2000/svg">
+ <style>@import url('https://fonts.googleapis.com/css?family=Merriweather');
+            .changeColor {
+              fill: #4f86ed;
+            }
+
+            #title {
+              font-size: 50%;
+              font-family: 'Merriweather', serif;
+            }
+
+            .cls-1 {
+              opacity: 0.3;
+            }
+
+            .cls-7 {
+              opacity: 0.8;
+            }
+
+            .cls-2 {
+              fill: #fff;
+            }
+
+            .cls-10,
+            .cls-11,
+            .cls-12,
+            .cls-14,
+            .cls-16,
+            .cls-3 {
+              fill: none;
+            }
+
+            .cls-3 {
+              stroke: #5c7690;
+            }
+
+            .cls-10,
+            .cls-11,
+            .cls-12,
+            .cls-3 {
+              stroke-miterlimit: 10;
+            }
+
+            .cls-14,
+            .cls-15,
+            .cls-16,
+            .cls-3 {
+              stroke-width: 0.5px;
+            }
+
+            .cls-4 {
+              fill: #ffe1d9;
+            }
+
+            .cls-5 {
+              fill: #ffcfbf;
+            }
+
+            .cls-6 {
+              fill: #fecbb6;
+            }
+
+            .cls-9 {
+              fill: #fecb02;
+            }
+
+            .cls-10,
+            .cls-12 {
+              stroke: #d26f51;
+            }
+
+            .cls-10,
+            .cls-11 {
+              stroke-width: 0.38px;
+            }
+
+            .cls-11 {
+              stroke: #000;
+            }
+
+            .cls-12 {
+              stroke-width: 0.19px;
+            }
+
+            .cls-13 {
+              opacity: 0.45;
+            }
+
+            .cls-14,
+            .cls-15,
+            .cls-16 {
+              stroke: #b0bec5;
+              stroke-linejoin: round;
+            }
+
+            .cls-15 {
+              fill: #edf0f2;
+            }
+
+            .cls-16 {
+              stroke-linecap: round;
+            }
+
+            .cls-17 {
+              font-family: 'PT Sans', sans-serif;
+              font-size: 49.87px;
+              font-weight: 700;
+            }
+
+            .cls-18 {
+              fill: #fffdbb;
+              opacity: 0.5;
+            }
+
+
+            /*---------------------------
+                   SVG Animate
+          ---------------------------*/
+            .earMove {
+              transition: all ease-in-out 2s;
+              transform-origin: 50% 50%;
+              animation: earmove 1.5s linear infinite alternate;
+            }
+
+            .faceMove {
+              transition: all ease-in-out 2s;
+              transform-origin: 50% 50%;
+              animation: move 1.5s linear infinite alternate;
+            }
+
+            .neckMove {
+              transition: all ease-in-out 2s;
+              transform-origin: 50% 50%;
+              animation: neck 1.5s linear infinite alternate;
+            }
+
+
+            @keyframes earmove {
+              0% {
+                transform: translateX(-0.3px) translateY(0.6px);
+              }
+              30% {
+                transform: translateX(-0.3px) translateY(0.6px);
+              }
+
+              60% {
+                transform: translateX(-0.7px) translateY(0px);
+              }
+
+              70% {
+                transform: translateX(-0.7px) translateY(-0.3px);
+              }
+              100% {
+                transform: translateX(-0.7px) translateY(-0.3px);
+              }
+            }
+
+            @keyframes move {
+              0% {
+                transform: translateX(-0.3px) translateY(0.6px);
+              }
+              30% {
+                transform: translateX(-0.3px) translateY(0.6px);
+              }
+
+              60% {
+                transform: translateX(2px) translateY(0px);
+              }
+
+              70% {
+                transform: translateX(2px) translateY(-0.3px);
+              }
+              100% {
+                transform: translateX(2px) translateY(-0.3px);
+              }
+            }
+
+            @keyframes neck {
+              0% {
+                transform: translateY(0.7px);
+              }
+              50% {
+                transform: translateY(0.7px);
+              }
+              100% {
+                transform: translateY(0px);
+              }
+            }</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="71.5" width="164.2" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill=" rgb(83, 145, 237)" d="m46.62,52.5c5.78,4.9 21.14,8.4 39.19,8.4s33.41,-3.5 39.19,-8.4c-5.78,-4.9 -21.14,-8.4 -39.19,-8.4s-33.4,3.5 -39.19,8.4z" class="changeColor cls-1" id="c-1"/>
+  <path id="svg_1" d="m99.73,47.71l-31.08,0a7.13,7.13 0 0 0 -7.13,7.13l0,5.16a152.58,152.58 0 0 0 24.3,1.83a157.87,157.87 0 0 0 21.05,-1.35l0,-5.64a7.13,7.13 0 0 0 -7.14,-7.13z" class="cls-2"/>
+  <path id="svg_2" d="m123.56,55.81c-8.56,3.13 -22.29,5.19 -37.75,5.19c-26,0 -47,-5.71 -47,-12.76c0,-3.45 5.05,-6.58 13.25,-8.88" class="cls-3"/>
+  <path id="svg_3" d="m55.37,38.47a140,140 0 0 1 30.44,-3c26,0 47,5.71 47,12.76c0,2.4 -2.44,4.65 -6.69,6.57" class="cls-3"/>
+  <path id="svg_4" d="m53.41,38.95l0.94,-0.24" class="cls-3"/>
+  <path id="svg_5" d="m91.68,47.71l-0.75,-11.2l-11.78,7.33l-1.69,3.87l-1.67,0c0,3.36 3.76,6.08 8.4,6.08s8.4,-2.72 8.4,-6.08l-0.91,0z" class="cls-4"/>
+  <path id="svg_6" d="m78,46.53a27.19,27.19 0 0 0 6.41,0.82c3.1,0 7.11,-2.19 7.11,-2.19l-0.42,-6.2l-11.95,4.88l-1.15,2.69z" class="cls-5 neckMove"/>
+  <polygon id="svg_7" points="92.59 32.22 92.59 28.5 76.77 27.71 76.77 32.22 92.59 32.22" class="earMove"/>
+  <circle id="svg_8" r="2.47" cy="34.04" cx="78.06" class="cls-6 earMove"/>
+  <path id="svg_9" d="m81.74,57.06l-21.11,-7.34l0,0a6.72,6.72 0 1 0 -2.93,12.77l35.55,0c0,-5.71 -11.51,-5.43 -11.51,-5.43z" class="cls-4"/>
+  <path id="svg_10" d="m77.46,25l13.46,0a0,0 0 0 1 0,0l0,14.38a6.73,6.73 0 0 1 -6.73,6.73l0,0a6.73,6.73 0 0 1 -6.73,-6.73l0,-14.38a0,0 0 0 1 0,0z" class="cls-4"/>
+  <rect fill=" rgb(83, 145, 237)" transform="rotate(2.49, 1.29, -3.65)" height="2.45" width="19.14" y="22.83" x="76.11" class="changeColor cls-7" id="c-2"/>
+  <path fill=" rgb(83, 145, 237)" transform="rotate(2.49, 1.06, -3.66)" d="m85.42,15.03l0.5,0a7.8,7.8 0 0 1 7.8,7.8l0,0a0,0 0 0 1 0,0l-16.1,0a0,0 0 0 1 0,0l0,0a7.8,7.8 0 0 1 7.8,-7.8z" class="changeColor cls-7" id="c-3"/>
+  <polygon fill=" rgb(83, 145, 237)" points="82.44 23.89 92.18 24.32 92.59 24.34 92.48 26.84 80.96 26.33 82.44 23.89" class="changeColor cls-8" id="c-4"/>
+  <circle id="svg_11" transform="rotate(-87.51, 51.58, 101.34)" r="3.73" cy="125.07" cx="130.3" class="cls-9 faceMove"/>
+  <circle id="svg_12" transform="rotate(-87.51, 51.58, 101.34)" r="2.36" cy="125.07" cx="130.3" class="cls-2 faceMove"/>
+  <circle id="svg_13" r="2.47" cy="34.04" cx="90.92" class="cls-4 earMove"/>
+  <path id="svg_14" d="m112.2,53l-9.87,-21.92l-3,-5.48l-11.86,-0.22l7.42,3.35l-3.34,0l5.82,4.58l2,22.26l0,0a6.72,6.72 0 1 0 12.83,-2.57z" class="cls-4"/>
+  <ellipse id="svg_15" ry="0.59" rx="0.53" cy="33.12" cx="80.09" class="faceMove"/>
+  <ellipse id="svg_16" ry="0.59" rx="0.53" cy="33.12" cx="86.34" class="faceMove"/>
+  <polyline id="svg_17" points="84.19 31.08 81.74 37.01 84.39 37.01" class="cls-10 faceMove"/>
+  <path id="svg_18" d="m83.06,40.36a4,4 0 0 1 2.75,-1" class="cls-10 faceMove"/>
+  <line id="svg_19" y2="30.58" x2="78.47" y1="30.33" x1="81.07" class="cls-11 faceMove"/>
+  <line id="svg_20" y2="31.08" x2="88.15" y1="30.45" x1="86.34" class="cls-11 faceMove"/>
+  <line id="svg_21" y2="46.11" x2="110.99" y1="47.82" x1="106.86" class="cls-12"/>
+  <line id="svg_22" y2="48.19" x2="111.55" y1="49.9" x1="107.43" class="cls-12"/>
+  <line id="svg_23" y2="50.27" x2="112.11" y1="51.98" x1="107.99" class="cls-12"/>
+  <g id="svg_24" class="cls-13">
+   <rect id="svg_25" height="3.5" width="10.77" y="2.46" x="85.81" class="cls-14"/>
+   <rect id="svg_26" height="3.5" width="10.77" y="2.46" x="96.58" class="cls-15"/>
+   <rect id="svg_27" height="3.5" width="10.77" y="5.95" x="92.19" class="cls-14"/>
+   <line id="svg_28" y2="5.95" x2="109.63" y1="5.95" x1="107.36" class="cls-16"/>
+   <line id="svg_29" y2="5.95" x2="111.57" y1="5.95" x1="110.68" class="cls-16"/>
+  </g>
+  <g id="svg_30" class="cls-13">
+   <rect id="svg_31" height="3.5" width="10.77" y="23.12" x="125" class="cls-16"/>
+   <rect id="svg_32" height="3.5" width="10.77" y="26.62" x="130.39" class="cls-15"/>
+   <rect id="svg_33" height="3.5" width="10.77" y="26.62" x="119.62" class="cls-16"/>
+   <line id="svg_34" y2="26.62" x2="145.73" y1="26.62" x1="141.16" class="cls-16"/>
+   <line id="svg_35" y2="23.12" x2="115.4" y1="23.12" x1="125" class="cls-16"/>
+   <line id="svg_36" y2="26.62" x2="115.4" y1="26.62" x1="117.95" class="cls-16"/>
+  </g>
+  <g id="svg_37" class="cls-13">
+   <rect id="svg_38" height="3.5" width="10.77" y="16.12" x="39.34" class="cls-16"/>
+   <rect id="svg_39" height="3.5" width="10.77" y="23.11" x="39.34" class="cls-16"/>
+   <rect id="svg_40" height="3.5" width="10.77" y="23.11" x="50.11" class="cls-16"/>
+   <rect id="svg_41" height="3.5" width="10.77" y="16.12" x="50.11" class="cls-16"/>
+   <rect id="svg_42" height="3.5" width="10.77" y="19.61" x="44" class="cls-15"/>
+   <rect id="svg_43" height="3.5" width="10.77" y="19.61" x="33.23" class="cls-16"/>
+   <line id="svg_44" y2="19.61" x2="65.51" y1="19.61" x1="60.89" class="cls-16"/>
+   <line id="svg_45" y2="16.12" x2="35.46" y1="16.12" x1="39.34" class="cls-16"/>
+   <line id="svg_46" y2="26.61" x2="33.23" y1="26.61" x1="36.45" class="cls-16"/>
+   <line id="svg_47" y2="23.11" x2="65.51" y1="23.11" x1="63.2" class="cls-16"/>
+  </g>
+  <polyline id="svg_48" points="115.4 58.12 115.4 38.27 120.2 37.01" class="cls-3"/>
+  <polyline id="svg_49" points="129.01 53.21 129.01 43.14 131.74 42.13" class="cls-3"/>
+  <path id="svg_50" d="m115.4,42.13a53.27,53.27 0 0 1 8,2a42,42 0 0 1 5.6,2.87" class="cls-3"/>
+  <path id="svg_51" d="m115.4,47.34a53.27,53.27 0 0 1 8,2a42,42 0 0 1 5.6,2.88" class="cls-3"/>
+  <path id="svg_52" d="m115.4,52.56a53.27,53.27 0 0 1 8,2l1,0.42" class="cls-3"/>
+  <path id="svg_53" d="m78.84,26.09l0,-4.71l-10.79,-3.06a0.91,0.91 0 0 0 -0.45,-0.13c-1.17,0 -2.11,2.46 -2.11,5.5s0.95,5.5 2.11,5.5a0.9,0.9 0 0 0 0.44,-0.12l10.8,-2.98z" class="cls-18 faceMove"/>
+  <path id="svg_54" d="m57.7,62.49l35.55,0a3.67,3.67 0 0 0 -0.33,-1.49l-39.49,0a6.69,6.69 0 0 0 4.27,1.49z" class="cls-5"/>
+  <path id="svg_55" d="m88.15,60.27s1.7,0.95 1.7,2.22" class="cls-12"/>
+  <path id="svg_56" d="m101.81,61a6.68,6.68 0 0 0 8.51,0l-8.51,0z" class="cls-5"/>
+  <polygon id="svg_57" points="90.92 30.25 77.46 29.69 77.46 28.64 90.92 29.22 90.92 30.25" class="cls-5"/>
+  <text transform="matrix(1 0 0 1 44.7249 78)" id="title">404 Page not found</text>
+  <rect id="svg_58" height="9.99999" width="168.99999" y="114.75001" x="-3.90002" stroke-width="1.5" stroke="#000" fill="#fff"/>
+ </g>
+</svg>

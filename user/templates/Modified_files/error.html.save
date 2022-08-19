@@ -1,0 +1,112 @@
+exit
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>error</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static '/images/icons/favicon.png' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/bootstrap/css/bootstrap.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/fonts/themify/themify-icons.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/animate/animate.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/css-hamburgers/hamburgers.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/animsition/css/animsition.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/select2/select2.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/daterangepicker/daterangepicker.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/slick/slick.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/vendor/lightbox2/css/lightbox.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static '/css/main.css' %} ">
+<!--===============================================================================================-->
+</head>
+<body >
+
+<section class="bgwhite p-t-115 p-b-95">
+	<div class="container t-center">
+        <div class="row">
+			<div class="col-md-8 col-lg-12 m-l-r-auto p-b-30">
+					<!-- -Block5 -->
+				<div class="blo5 pos-relative p-t-60">
+                    <div class="text-blo5 bo-rad-10  p-t-90 p-l-35 p-r-35 p-b-30">
+						<img id="error" src=" {% static '/images/method-draw-image(1).png' %} " alt="triangle with equal sides" srcset="images/method-draw-image(1).svg" width="100%">	
+					</div>
+                    <p id="demo" class="txt22 m-l-50 p-t-50"></p>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+
+
+<div class="m-b-250">
+	<a href=" {% static '/{{url} {% static '/' %} }' %} " class="btn2 flex-c-m txt5 ab-m-m size4 bo9">
+		Try again
+	</a>
+</div>
+
+
+
+
+<script>
+		var err = "{{httperrorvar}}" ;
+
+</script>
+
+<script>
+    function myFunction(err_type) {
+        if (err_type== 404){
+            return "404 Page not found"+ "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کنید" ;  
+        }
+        else if(err_type == 400 ){
+            return "400 Bad Request" + "<br/>" + "یه جا رو اشتباه زدی دوباره امتحان کنید" ;
+        }
+        else if(err_type == 403 ){
+            return "403 Forbidden" + "<br/>" + "این صفحه قابل دسترس برای شما نیست" ;
+        }
+        else if(err_type == 408 ){
+            return " 408 Request Timeout" + "<br/>" + "لطفا یکم صبر کنید" ;
+        }
+        else if(err_type == 405 ){
+            return "405 Method Not Allowed" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+        else if(err_type == 406 ){
+            return "406 Not Acceptable" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+        else if(err_type == 401 ){
+            return "401 Unauthorized" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 402 ){
+            return "402 Payment Required" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 409 ){
+            return "409 Conflict" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 410 ){
+            return "410 Gone" + "<br/>" + "این صفحه وجود ندارد" ;
+        }
+}
+
+document.getElementById("demo").innerHTML = myFunction(err); 
+</script>
+    
+    
+
+   
+   </body>
+  </html>
+                                

@@ -1,0 +1,57 @@
+body{
+	direction: rtl;
+	background-color: rgb(206,235,255);
+	background-repeat:repeat-y;
+	background-size: auto;
+
+}
+
+#div1{
+	width: 50%;
+	height: 30%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left:auto;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 50px;
+	box-shadow: 3px 3px 10px black;
+}
+
+
+#pic1{
+	width: 80%;
+	height: 75%;
+	padding-top: 5px;
+	transition: all .2s;
+}
+
+
+#pic1:hover{
+    
+	filter:blur(50px);
+}
+
+
+#div2{
+
+	width: 98%;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px black;
+	margin: auto;
+	margin-top: 40px;
+}
+
+
+
+
+hr {
+    height: 2px;
+    background-color: black;
+    width: 99%;
+    margin-top: 60px;
+    margin-bottom:40px;
+}
+

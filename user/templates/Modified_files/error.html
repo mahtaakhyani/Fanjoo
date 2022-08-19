@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>errors</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static 'images/icons/favicon.png' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/themify/themify-icons.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animate/animate.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/css-hamburgers/hamburgers.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animsition/css/animsition.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/select2/select2.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/daterangepicker/daterangepicker.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/slick/slick.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/lightbox2/css/lightbox.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/main.css' %} ">
+<!--===============================================================================================-->
+</head>
+<body >
+
+
+
+<ul><p>{{data}}</p></ul> 
+
+<section class="section-review p-t-115">
+    <div class="slick3">
+        <div class="item-slick3 item1-slick3">
+                    <div class="pic-review  wrap-cir-pic m-l-r-auto visible-false" >
+                        <img src=" {% static 'method-draw-image(1).png' %} " alt="triangle with equal sides" srcset="{% static 'method-draw-image(1).svg' %}" >
+                    </div>
+
+                    <div class="content-review m-t-33 " >
+                        <p id="demo" class="txt22 m-l-250 m-t-50 t-center p-l-15 p-r-15 p-t-3 m-l-r-auto"></p>
+                        
+                    </div>
+
+                    <div class="m-t-200">
+                        <a href="#" class="btn2 flex-c-m txt5 ab-m-m size5 ">
+                            Try again
+                        </a>
+                    </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+<!--===============================================================================================-->
+<script type="text/javascript" src=" {% static 'vendor/jquery/jquery-3.2.1.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/animsition/js/animsition.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/popper.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/select2/select2.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/moment.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/daterangepicker.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/slick/slick.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'js/slick-custom.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/parallax100/parallax100.js' %} "></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/countdowntime/countdowntime.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/lightbox2/js/lightbox.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script src=" {% static 'js/main.js' %} "></script>
+
+
+<script>
+		var err = 403;
+
+</script>
+
+<script>
+    function myFunction(err_type) {
+        if (err_type== 404){
+            return "404 Page not found"+ "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کنید" ;  
+        }
+        else if(err_type == 400 ){
+            return "400 Bad Request" + "<br/>" + "یه جا رو اشتباه زدی دوباره امتحان کنید" ;
+        }
+        else if(err_type == 403 ){
+            return "403 Forbidden" + "<br/>" + "این صفحه قابل دسترس برای شما نیست" ;
+        }
+        else if(err_type == 408 ){
+            return " 408 Request Timeout" + "<br/>" + "لطفا یکم صبر کنید" ;
+        }
+        else if(err_type == 405 ){
+            return "405 Method Not Allowed" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+        else if(err_type == 406 ){
+            return "406 Not Acceptable" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+        else if(err_type == 401 ){
+            return "401 Unauthorized" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 402 ){
+            return "402 Payment Required" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 409 ){
+            return "409 Conflict" + "<br/>" + "یه مشکلی به وجود اومد دوباره امتحان کن" ;
+        }
+		else if(err_type == 410 ){
+            return "410 Gone" + "<br/>" + "این صفحه وجود ندارد" ;
+        }
+}
+
+document.getElementById("demo").innerHTML = myFunction(err); 
+</script>
+    
+    
+
+   
+   </body>
+  </html>
+                                

@@ -1,0 +1,949 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>مجله فنجو</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static 'images/icons/fevicon.png' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/themify/themify-icons.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animate/animate.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/css-hamburgers/hamburgers.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animsition/css/animsition.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/select2/select2.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/daterangepicker/daterangepicker.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/slick/slick.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/lightbox2/css/lightbox.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/main.css' %} ">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+<header>
+
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="https://www.fanjou.ir">
+							<img src=" {% static 'images/icons/logo.png' %} " alt="LOGO">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-0 p-l-0-xl">
+						<nav class="menu">
+
+
+							<ul class="main_menu">
+
+								<span class="divsbt">						
+								<div style="float:center;"><a href="https://www.fanjou.ir/account/" class="sabt">ورود | ثبت نام</a></div>
+								</span>
+								<li>
+									<a href="https://fanjou.ir/test" class="vrd testbtn">شروع تست</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir/career">حرفه و مهارت</a>
+								</li>
+
+								<li>
+									<a href="#">دوره ها</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir/blog">مجله فنجو</a>
+								</li>
+
+								<li>
+									<a href="https://www.fanjou.ir">خانه</a>
+								</li>
+
+								
+								
+
+							</ul>
+
+							
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+	<!-- Sidebar -->
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-5">
+				<a href="https://fanjou.ir" class="txt19">خانه </a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="https://fanjou.ir/blog" class="txt19">مجله فنجو</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="#" class="txt19">دوره ها</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href="https://fanjou.ir/career" class="txt19">حرفه و مهارت</a>
+			</li>
+
+			
+				<li class="t-center">
+				<!-- Button3 -->
+				<!-- <a href="#" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					
+				</a> -->
+				<a href="#" class="vrd testbtn txt19">شروع تست</a>
+				<div class="divsbt2" style="margin-top: 25px;">
+				<a href="#" class="vrd txt19">ورود | ثبت نام</a>
+				<!-- |
+				<a href="#" class="sabt txt19">ثبت نام</a> -->
+				</div>
+				
+				</li>
+
+				
+
+					<input type="text" name="search" class="search txt19" placeholder="! سرچ کن">
+					<button class="submit txt19" type="submit">search</button>
+
+						
+						<li class="social" style="margin-top :20px; " >
+						
+						<a href="#"><i class="fa fa-facebook m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-10" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/fanjou.ir"><i class="fa fa-instagram m-l-10" href="https://www.instagram.com" aria-hidden="true"></i></a>
+						<a href="https://www.telegram.com@Fanjou"><i class="fa fa-telegram m-l-10" href="https://www.telegram.com@Fanjou" aria-hidden="true"></i></a>
+						<a href="https://plus.google.com/"><i class="fa fa-google-plus m-l-10" href="https://plus.google.com/" aria-hidden="true"></i></a>
+
+					</li>
+
+						
+			</ul>
+	</aside>
+
+
+	
+
+
+	<section class="bg-title-page p-l-15 p-r-15" style="background-color: #094c91c7;"></section>
+	<!-- Content page -->
+	<section>
+		<div class="bread-crumb bo5-b p-t-17 p-b-17">
+			<div class="container" style="direction: rtl; text-align: right">
+				<a href="https://fanjou.ir" class="txt27-1">
+					خانه
+				</a>
+
+				<span class="txt29-1 m-l-10 m-r-10">/</span>
+
+				<span class="txt29-1">
+					مجله
+				</span>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-lg-9">
+					<div id="firstpage" class="p-t-80 p-b-124 bo5-r h-full p-r-50 p-r-0-md bo-none-md" style="direction: rtl;">
+						<!-- Block4 -->
+						<ul>
+							{% for post in BlogPosts %}
+								<div class="blo4 p-b-63">
+									<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+										<a href="/blog/detail/{{post.id}}">
+											<img src="/images/{{post.image}}" alt="IMG-BLOG">
+										</a>
+
+										<div class="date-blo4 flex-col-c-m">
+											<span class="txt29-1 m-b-4">
+											{{post.date.day}}
+											</span>
+
+											<span class="txt29-1">
+											{{post.date.year}},{{post.date.month}}
+											</span>
+										</div>
+										<div class="btn2 flex-c-m tit3 ab-c-m size4-2 t-center ">
+											<span>
+												<a href="/blog/detail/{{post.id}}" class="tit3">{{post.title}}</a>
+											</span>
+										</div>
+									</div>
+
+									<div class="text-blo4 p-t-33">
+										<div class="txt29-1 flex-w p-b-24">
+											<!-- <span>
+												by Admin
+												<span class="m-r-6 m-l-4">|</span>
+											</span> -->
+
+											<span>
+												{{post.date}}
+												<span class="m-r-6 m-l-4">|</span>
+											</span>
+
+											<span>
+												{{post.tags}}
+												<span class="m-r-6 m-l-4">|</span>
+											</span>
+
+											<span>
+												8 نظر
+											</span>
+										</div>
+										<h4 class="p-b-16">
+                                                                                        <a href="/blog/detail/{{post.id}}" class="tit9">{{post.title}}</a>
+                                                                                </h4>
+
+										<pre class="t-right txt26-2">
+											{{post.brieftext}}
+										</pre>
+
+										<a href="/blog/detail/{{post.id}} " class="dis-block txt4 m-t-30 t-left">
+											بیشتر بخوانید
+											<i class="fa fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+							{% endfor %}
+
+
+
+					</div>
+				
+					<div id="PageTwo" class="p-t-80 p-b-124 bo5-r h-full p-r-50 p-r-0-md bo-none-md" style="direction: rtl; display: none;">
+						<!-- Block4 -->
+						<div class="blo4 p-b-63">
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href=" {% static 'blog-detail.html' %} ">
+									<img src=" {% static 'images/programming.jpg' %} " alt="IMG-BLOG">
+								</a>
+
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										25
+									</span>
+
+									<span class="txt31">
+										اردیبهشت, ۱۳۹۹
+									</span>
+								</div>
+							</div>
+
+							<div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href=" {% static 'blog-detail.html' %} " class="tit9">چرا باید برنامه نویسی یاد بگیریم؟!</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<!-- <span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span> -->
+
+									<span>
+										۲۳ اردیبهت ۱۳۹۹
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										برنامه نویسی, پایتون
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										8 نظر
+									</span>
+								</div>
+
+								<p>
+									یا بهتره بپرسیم،
+								🔴برنامه نویسی رو زندگی روزمره‌مون چه تاثیری داره؟!
+
+								🔻از استیو جابز نقل شده که:" همه باید برنامه‌نویسی برای کامپیوتر را بیاموزند...زیرا این به شما یاد میدهد که چگونه فکر کنید."
+
+								⁉️واقعا کد زدن چه فوایدی داره؟!
+								</p>
+
+								<a href=" {% static 'blog-detail.html' %} " class="dis-block txt4 m-t-30">
+									بیشتر بخوانید
+									<i class="fa fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+
+						<!-- Block4 -->
+						<div class="blo4 p-b-63">
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href=" {% static 'blog-detail.html' %} ">
+									<img src=" {% static 'images/it_service/Computer-Engineer-Job.jpg' %} " alt="IMG-BLOG">
+								</a>
+
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										۱۴
+									</span>
+
+									<span class="txt31">
+										خرداد, ۱۳۹۹
+									</span>
+								</div>
+							</div>
+
+							<div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href=" {% static 'blog-detail.html' %} " class="tit9">گرایش های ارشد مهندسی کامپیوتر</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<!-- <span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span> -->
+
+									<span>
+										۱۴ خرداد ۱۳۹۹
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										دانشگاهی، گرایش ارشد، مهندسی کامپیوتر
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										۸ نظر
+									</span>
+								</div>
+
+								<p>
+									هوش مصنوعی
+								 نرم افزار
+								 معماری کامپیوتر
+
+								⁉️هر کدوم اصلا چی هستن و چه کاربردایی دارن؟!
+
+								✅ منِ دانشجو تو این رشته ها، چه مهارت‌ها و دروسیو تو طول تحصیلش یاد میگیرم؟!
+								بازار کار هر کدوم تو ایران چیه و چه شکلیه؟! چه فرصت شغلیایی میتونم داشته باشم با هر گرایش؟!
+								چه واحدایی باید بگذرونم؟!
+								</p>
+
+								<a href=" {% static 'blog-detail.html' %} " class="dis-block txt4 m-t-30">
+									بیشتر بخوانید
+									<i class="fa  fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+
+						<!-- Block4 -->
+						<div class="blo4 p-b-63">
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href=" {% static 'blog-detail.html' %} ">
+									<img src=" {% static 'images/university-of-waterloo.jpg' %} " alt="IMG-BLOG">
+								</a>
+
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										۷
+									</span>
+
+									<span class="txt31">
+										تیر, ۱۳۹۹
+									</span>
+								</div>
+							</div>
+
+							<div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href=" {% static 'blog-detail.html' %} " class="tit9">دانشگاه واترلو کانادا</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<!-- <span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span> -->
+
+									<span>
+										۷ تیر ۱۳۹۹
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										معرفی دانشگاه, کانادا
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										۵ نظر
+									</span>
+								</div>
+
+								<p>
+									دانشگاه واترلو کانادا رتبه ۱۷۳ در دنیا و رتبه ۷ در میان دانشگاه‌های کانادا را دارد. همچنین بر اساس QSدر زمینه اشتغال فارغ‌التحصیلان دانشگاه‌ها، دانشگاه واترلو رتبه ۲۵ دنیا و رتبه دوم در کانادا را دار
+									این دانشگاه کار خود را در سال ۱۹۵۷ با ۷۴ دانشجو شروع کرد و در حال حاضر حدود ۴۱۰۰۰ دانشجوی تمام‌وقت و نیمه‌وقت دارد. 
+								</p>
+
+								<a href=" {% static 'blog-detail.html' %} " class="dis-block txt4 m-t-30">
+									بیشتر بخوانید
+									<i class="fa  fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+
+						<!-- Block4 -->
+						<div class="blo4 p-b-63">
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href=" {% static 'blog-detail.html' %} ">
+									<img src=" {% static 'images/chemical-eng.jpg' %} " alt="IMG-BLOG">
+								</a>
+
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										۱۳
+									</span>
+
+									<span class="txt31">
+										تیر, ۱۳۹۹
+									</span>
+								</div>
+							</div>
+
+							<div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href=" {% static 'blog-detail.html' %} " class="tit9">معرفی گرایش های ارشد مهندسی شیمی</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<!-- <span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span> -->
+
+									<span>
+										۱۳ تیر, ۱۳۹۹
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										دانشگاهی, گرایش ارشد مهندسی شیمی
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										۲ نظر
+									</span>
+								</div>
+
+								<p>
+									📌طراحی فرآیند:
+									در گرايش طراحي فرايند هدف اين است كه مواد اوليه كم ارزش را به محصولات با ارزش افزوده بالا تبديل كنيم. در اين گرايش با اصول طراحي واكنش هاي شيميايي و مدل سازي و شبيه سازي واكنش ها، جهت به دست آوردن توانایی طراحی فرآیندهای خاص، آشنا می‌شود.
+								</p>
+
+								<a href=" {% static 'blog-detail.html' %} " class="dis-block txt4 m-t-30">
+									بیشتر بخوانید
+									<i class="fa  fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+
+						<!-- Block4 -->
+						<!-- <div class="blo4 p-b-63">
+							<div class="pic-blo4 hov-img-zoom bo-rad-10 pos-relative">
+								<a href=" {% static 'blog-detail.html' %} ">
+									<img src=" {% static 'images/blog-10.jpg' %} " alt="IMG-BLOG">
+								</a>
+
+								<div class="date-blo4 flex-col-c-m">
+									<span class="txt30 m-b-4">
+										12
+									</span>
+
+									<span class="txt31">
+										Dec, 2018
+									</span>
+								</div>
+							</div> -->
+
+							<!-- <div class="text-blo4 p-t-33">
+								<h4 class="p-b-16">
+									<a href=" {% static 'blog-detail.html' %} " class="tit9">Best Places for Wine</a>
+								</h4>
+
+								<div class="txt32 flex-w p-b-24">
+									<span>
+										by Admin
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										12 December, 2018
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										Cooking, Food
+										<span class="m-r-6 m-l-4">|</span>
+									</span>
+
+									<span>
+										8 Comments
+									</span>
+								</div>
+
+								<p>
+									Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius
+								</p>
+
+								<a href=" {% static 'blog-detail.html' %} " class="dis-block txt4 m-t-30">
+									Continue Reading
+									<i class="fa  fa-long-arrow-left m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div> -->
+
+						<!-- Pagination -->
+					</div>
+					<div class="pagination flex-l-m flex-w m-r-6 p-t-0" id="myBtnpg" style="direction: rtl; margin-top: -70px">
+						<a href="#" class="item-pagination flex-c-m trans-0-4" id="myBtnpg" onclick="return show('firstpage','PageTwo');">1</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4" id="myBtnpg" onclick="return show('secondpage','firstpage');" >2</a>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-lg-3" style="direction: rtl;">
+					<div class="sidebar2 p-t-80 p-b-80 p-l-20 p-l-0-md p-t-0-md">
+						<!-- Search -->
+						<div class="search-sidebar2 size12 bo2 pos-relative">
+							<input class="input-search-sidebar2 txt10 p-l-20 p-r-55 t-center" type="text" name="search" placeholder="جستجو">
+							<button class="btn-search-sidebar2 flex-c-m ti-search trans-0-4"></button>
+						</div>
+
+						<!-- Categories -->
+						<div class="categories">
+							<h4 class="txt33 bo5-b p-b-35 p-t-58">
+								دسته بندی ها
+							</h4>
+
+							<ul>
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27-1">
+										شغل ها
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27-1">
+										معرفی رشته های دانشگاهی
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27-1">
+										مهارت های نرم
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27-1">
+										اطلاعات عمومی محیط کار
+									</a>
+								</li>
+
+								<li class="bo5-b p-t-8 p-b-8">
+									<a href="#" class="txt27-1">
+										معرفی دانشگاه ها
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Most Popular -->
+						<div class="popular">
+							<h4 class="txt33 p-b-35 p-t-58">
+								پربازدیدترین
+							</h4>
+
+							<ul>
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src=" {% static 'images/chemical-eng.jpg' %} " alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											معرفی گرایش های ارشد مهندسی شیمی 
+										</a>
+
+										<span class="txt14">
+											۳ روز پیش
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src=" {% static 'images/it_service/Computer-Engineer-Job.jpg' %} " alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											معرفی گرایش های ارشد مهدسی کامپیوتر
+										</a>
+
+										<span class="txt14">
+											۳ خرداد ۹۹
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src=" {% static 'images/python.jpg' %} " alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											لیست سایت ها و کانال های کاربردی برای یادگیری زبان پایتون
+										</a>
+
+										<span class="txt14">
+											۱۵ فروردین ۹۹
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src=" {% static 'images/programming.jpg' %} " alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											برنامه نویسی چه تاثیری بر زندگی ما دارد؟
+										</a>
+
+										<span class="txt14">
+											۱۷ اردیبهشت ۹۹
+										</span>
+									</div>
+								</li>
+
+<!-- 								<li class="flex-w m-b-25">
+									<div class="size16 bo-rad-10 wrap-pic-w of-hidden m-r-18">
+										<a href="#">
+											<img src=" {% static 'images/blog-15.jpg' %} " alt="IMG-BLOG">
+										</a>
+									</div>
+
+									<div class="size28">
+										<a href="#" class="dis-block txt28 m-b-8">
+											Pizza is prepared fresh
+										</a>
+
+										<span class="txt14">
+											May 2, 2017
+										</span>
+									</div>
+								</li> -->
+							</ul>
+						</div>
+
+
+						<!-- Archive -->
+						<div class="archive">
+							<h4 class="txt33 p-b-20 p-t-43">
+								هشتگ ها
+							</h4>
+
+							<ul>
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										فنی
+									</a>
+
+									<span class="txt29-1">
+										(9)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										مصاحبه
+									</a>
+
+									<span class="txt29-1">
+										(39)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										گرایش
+									</a>
+
+									<span class="txt29-1">
+										(29)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										شغل
+									</a>
+
+									<span class="txt29-1">
+										(35)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										برنامه نویسی
+									</a>
+
+									<span class="txt29-1">
+										(22)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										معرفی
+									</a>
+
+									<span class="txt29-1">
+										(32)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										نرم افزار
+									</a>
+
+									<span class="txt29-1">
+										(21)
+									</span>
+								</li>
+
+								<li class="flex-sb-m p-t-8 p-b-8">
+									<a href="#" class="txt29-1">
+										گرایش
+									</a>
+
+									<span class="txt29-1">
+										(26)
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+	<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						تماس با ما
+					</h4>
+
+						<ul>
+						<li><p>آدرس : تهران - میدان انقلاب - خیابان انقلاب - خیابان ۱۶ آذر - سازمان مرکزی دانشگاه تهران</p></li>
+						<li><P>fanjouteam@gmail.com  :ایمیل </P></li>
+						<li><p>0912 339 5675  : تلفن</p></li>
+             			</ul>
+					
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						موضوعات 
+					</h4>
+
+					<div class="m-b-25 footer-menu">
+						<li><a href="https://fanjou.ir/blog"><i class="fa fa-angle-left"></i>مجله فنجو</a></li>
+						<li><a href="#"><i class="fa fa-angle-left"></i>دوره ها </a></li>
+						<li><a href="https://fanjou.ir/career"><i class="fa fa-angle-left"></i>حرفه و مهارت</a></li>
+						<li><a href="#"><i class="fa fa-angle-left"></i>تست </a></li>
+             
+					</div>
+
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						برچسب ها
+					</h4>
+
+					
+					<div class="m-b-25 footer-menu">
+						<div class="footer-div" style="margin-top: 15px ; text-align: center;">
+						<a href="#">تکنولوژی </a>
+						<a href="#">انسانی</a>
+						<a href="#">مهندسی </a>
+						</div>
+						<div class="footer-div" style="margin-top: 15px; text-align: center;">
+						<a href="#">مالی </a>
+						<a href="#">هنری </a>
+						<a href="#">مدیریتی</a>
+						</div>
+						<div class="footer-div" style="margin-top: 15px; text-align: center;">
+							<a href="#">آشپزی</a>
+						<a href="#">روانشناسی</a>
+						<a href="#">مارکتینگ</a>
+						</div>
+             
+					</div>
+	
+				</div>
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h1 class="txt13 m-b-38">
+						اعضای تیم فنجو
+					</h1>
+
+					
+					<div class="m-b-25 footer-menu">
+						<div class="footer-div" style="margin-top: 15px ; text-align: center;">
+						<a href="#">مهتا اخیانی </a>
+						<a href="#">پارسا مشایخ</a>
+						<a href="#">سارا شعاری نژاد </a>
+						</div>
+						<div class="footer-div" style="margin-top: 15px; text-align: center;">
+						<a href="#">سودابه محمدهاشمی </a>
+						<a href="#">مینا صبوری </a>
+						<a href="#">حسین حیدری</a>
+						</div>
+             
+					</div>
+	
+				</div>
+			</div>
+		</div>
+
+		
+	</footer>
+
+
+
+
+	
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/jquery/jquery-3.2.1.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/animsition/js/animsition.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/popper.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/select2/select2.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/moment.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/daterangepicker.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/slick/slick.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'js/slick-custom.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/parallax100/parallax100.js' %} "></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+
+<!-- ==============================================================================================  -->
+
+<script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+</script>
+<script>
+    links = document.querySelectorAll(".item-pagination");
+  	links.forEach(function (item) {
+    item.addEventListener('click', function () {
+      //reset the color of other links
+      links.forEach(function (item) {
+        item.style.backgroundColor = '#fff'
+      })
+      // apply the style to the link
+      this.style.backgroundColor = '#333333'
+    });
+  })
+
+</script>
+<!-- ==============================================================================================
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/countdowntime/countdowntime.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/lightbox2/js/lightbox.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/isotope/isotope.pkgd.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script src=" {% static 'js/main.js' %} "></script>
+
+</body>
+</html>

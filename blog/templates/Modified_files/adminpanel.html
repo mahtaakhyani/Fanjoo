@@ -1,0 +1,105 @@
+{% load static %}
+<html>
+<head>
+<title>Admin Panel</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href=" {% static 'css.css' %} ">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div id="div1">
+<p style="text-align: center;" ><img src=" {% static 'img/1.png' %} " id="pic1"></p>
+</div>
+
+
+
+<div id="div2">
+	
+<h2 style="text-align: center; font-family: tahoma; font-size: 2.3vw; color: rgb(9, 9, 160);" >درج پست</h2>
+<p style="color: black; font-size: 2vw; padding-right: 15px; padding-top: 15px; font-family: tahoma">متن و کلید مناسب را وارد کنید.</p>
+
+
+{% csrf_token %}
+<form method="POST" enctype="multipart/form-data" action="/admin_panel/">
+
+	<p style="text-align: center;">
+		<textarea name="text" rows="15"  cols="87" style="text-align: right; margin-right: auto; margin-top: 10px; margin-left: auto; width: 90%; font-size: 1.6vw;" placeholder="درج متن الزامیست">
+			
+		</textarea>
+	</p>
+
+
+	<p style="color: black; font-size: 1.9vw; padding-right: 15px; padding-top: 30px; font-family: tahoma">آپلود عکس:</p>
+	
+	<input type="file" name="image" style="font-size: 1.6vw ; margin-right: auto; margin-left: auto; padding-right: 15px; padding-top: 30px; text-align: center;">
+
+	<p style="text-align: center;">
+		<button type="submit" style="background-color: rgb(87, 160, 209); font-size: 1.6vw ; font-family: tahoma; margin-right: auto; text-align: center; width: 12%; height: 6%; margin-left: auto;">
+			ارسال
+		</button>
+	</p>
+
+
+</form>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------< -->
+
+<hr>
+
+
+<h2 style="text-align: center; font-family: tahoma; font-size: 2.3vw; color: rgb(9, 9, 160);" >ویرایش و حذف</h2>
+<p style="color: black; font-size: 1.9vw; padding-right: 15px; padding-top: 15px; font-family: tahoma">متن ویرایش شده را همراه با کلید آن وارد کنید.</p>
+<form method="POST" action="php3.php">
+<p style="text-align: center;"><textarea rows="15" name="text_edit" cols="87" style="text-align: right; margin-right: auto; margin-top: 10px; margin-left: auto; width: 90%; font-size: 1.6vw;" placeholder="درج متن الزامیست"></textarea></p>
+<p style="text-align: center;"><textarea rows="4" name="key_text_edit" cols="10" style="text-align: right; margin-right: auto; margin-top: 10px ; margin-left:auto; width: 35%; font-size: 1.6vw; " placeholder="کلید الزامیست"></textarea></p>
+
+<p style="text-align: center;"><button type="submit" style="background-color: rgb(87, 160, 209); font-size:1.6vw ; font-family: tahoma; margin-right: auto; text-align: center; width: 12%; height: 6%; margin-left: auto;">ارسال</button></p>
+
+</form>
+
+
+
+
+<form method="POST" action="php4.php" >
+
+<p style="text-align: center;"><textarea rows="4" name="key_delete_text" cols="10" style="text-align: right; margin-right: auto; margin-top: 10px ; margin-left:auto; width: 35%; font-size: 1.6vw; " placeholder="کلید الزامیست"></textarea></p>
+<p style="text-align: center;"><button type="submit" style="background-color: rgb(87, 160, 209); font-size: 1.6vw ; font-family: tahoma; margin-right: auto; text-align: center; width: 12%; height: 6%; margin-left: auto;">ارسال</button></p>
+
+
+</form>
+
+
+<p style="color: black; font-size: 2vw; padding-right: 15px; padding-top: 15px; font-family: tahoma">نام فایل ویرایش شده را به همراه فرمت آن وارد کنید.
+(مثال : fanjou.zip)</p>
+<form method="POST" action="php5.php" enctype="multipart/form-data">
+<p style="text-align: center;"><input type="file" name="file_edit" style="font-size: 1.6vw; margin-right: auto; margin-left: auto; padding-right: 15px; padding-top: 30px; text-align: center;"></p>
+
+<p style="text-align: center;"><textarea rows="4" name="add_file_edit" cols="10" style="text-align: right; margin-right: auto; margin-top: 10px ; margin-left:auto; width: 35%; font-size:1.6vw; " placeholder="نام فایل و فرمت آن الزامیست"></textarea></p>
+<p style="text-align: center;"><textarea rows="4" name="key_file_edite" cols="10" style="text-align: right; margin-right: auto; margin-top: 10px ; margin-left:auto; width: 35%; font-size: 1.6vw; " placeholder="کلید الزامیست"></textarea></p>
+
+<p style="text-align: center;"><button type="submit" style="background-color: rgb(87, 160, 209); font-size:1.6vw ; font-family: tahoma; margin-right: auto; text-align: center; width: 12%; height: 6%; margin-left: auto;">ارسال</button></p>
+</form>
+
+
+
+
+<p style="color: black; font-size: 2vw; padding-right: 15px; padding-top: 15px; font-family: tahoma">کلید فایل مورد نظر را برای حذف وارد کنید.
+</p>
+<form method="POST" action="php6.php">
+
+<p style="text-align: center;"><textarea rows="4" name="key_delete_file" cols="10" style="text-align: right; margin-right: auto; margin-top: 10px ; margin-left:auto; width: 35%; font-size: 1.6vw; " placeholder="کلید الزامیست"></textarea></p>
+
+<p style="text-align: center;"><button type="submit" style="background-color: rgb(87, 160, 209); font-size: 1.6vw ; font-family: tahoma; margin-right: auto; text-align: center; width: 12%; height: 6%; margin-left: auto;">ارسال</button></p>
+
+</form>
+
+</div>
+
+
+
+
+</body>
+</html>

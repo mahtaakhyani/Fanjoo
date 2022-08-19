@@ -1,0 +1,940 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MY ACCOUNT</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static 'images/icons/favicon.png' %} "/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'fonts/themify/themify-icons.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animate/animate.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/css-hamburgers/hamburgers.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/animsition/css/animsition.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/select2/select2.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/daterangepicker/daterangepicker.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/slick/slick.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'vendor/lightbox2/css/lightbox.min.css' %} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/util.css' %} ">
+	<link rel="stylesheet" type="text/css" href=" {% static 'css/main.css' %} ">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href=" {% static 'index.html' %} ">
+							<img src=" {% static 'images/icons/logo.png' %} " alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li>
+									<a href=" {% static 'index.html' %} ">صفحه اصلی </a>
+								</li>
+
+								<li>
+									<a href=" {% static 'menu.html' %} ">همه دوره ها </a>
+								</li>
+
+								<li>
+									<a href=" {% static 'mycourses.html' %} ">دوره های من </a>
+								</li>
+
+								<li>
+									<a href=" {% static 'points.html' %} ">امتیازها</a>
+								</li>
+
+								<li>
+									<a href=" {% static 'blog.html' %} ">مجله</a>
+								</li>
+
+								<li>
+									<a href=" {% static 'setting.html' %} ">تنظیمات </a>
+								</li>
+								<li>
+									<a href=" {% static 'contact.html' %} ">چت گروهی </a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="#"><i class="fa fa-facebook m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-10" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram m-l-10" href="https://www.instagram.com" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-telegram m-l-10" href="https://www.telegram.com@Fanjou" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus m-l-10" href="https://plus.google.com/" aria-hidden="true"></i></a>
+
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-5">
+				<a href=" {% static 'index.html' %} " class="txt19">صفحه اصلی</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href=" {% static 'menu.html' %} " class="txt19">همه دوره ها</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href=" {% static 'points.html' %} " class="txt19">امتیازها</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href=" {% static 'blog.html' %} " class="txt19">مجله</a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href=" {% static 'contact.html' %} " class="txt19">چت گروهی </a>
+			</li>
+
+			<li class="t-center m-b-5">
+				<a href=" {% static 'setting.html' %} " class="txt19">تنظیمات</a>
+			</li>
+
+			<li class="t-center">
+				<!-- Button3 -->
+				<a href=" {% static 'mycourses.html' %} " class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					دوره های من
+				</a>
+			</li>
+		</ul>
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			<h4 class="txt20 m-b-30">
+				!یادبگیر و امتیاز کسب کن
+			</h4>
+
+			<!-- Gallery -->
+			<div class="wrap-gallery-sidebar flex-w">
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-01.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-01.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-02.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-02.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-03.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-03.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-05.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-05.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-06.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-06.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-07.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-07.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-09.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-09.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-10.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-10.jpg' %} " alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href=" {% static 'images/photo-gallery-11.jpg' %} " data-lightbox="gallery-footer">
+					<img src=" {% static 'images/photo-gallery-thumb-11.jpg' %} " alt="GALLERY">
+				</a>
+			</div>
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url( {% static 'images/slide1-01.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							به خانواده فنجو
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+							خوش آمدید
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
+							<!-- Button1 -->
+							<a href=" {% static 'mycourses.html' %} " class="btn1 flex-c-m size1 txt3 trans-0-4">
+								مشاهده دوره های من
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item2-slick1" style="background-image: url( {% static 'images/slide1-02.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							به خانواده فنجو
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+							خوش آمدید
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
+							<!-- Button1 -->
+							<a href=" {% static 'mycourses.html' %} " class="btn1 flex-c-m size1 txt3 trans-0-4">
+								مشاهده دوره های من
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url( {% static 'images/slide1-03.jpg' %} );">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" style="color: black;" data-appear="rotateInDownLeft">
+							به خانواده فنجو
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" style="color: black;" data-appear="rotateInUpRight">
+							خوش آمدید
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
+							<!-- Button1 -->
+							<a href=" {% static 'mycourses.html' %} " class="btn1 flex-c-m size1 txt3 trans-0-4">
+								مشاهده دوره های من
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick1-dots"></div>
+		</div>
+	</section>
+
+	<!-- Welcome -->
+	<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 p-t-45 p-b-30">
+					<div class="wrap-text-welcome t-center">
+						<span class="tit2 t-center">
+							Fanjou
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-5">
+							خوش آمدید
+						</h3>
+
+						<p class="t-center m-b-10 size3 m-l-r-auto" style="font-size: 120%;">
+							:) با گذراندن دوره ها و فعالیتت امتیاز کسب کن و برای دوره بعدی تخفیف بگیر
+						</p>
+
+						<a href=" {% static 'points.html' %} " class="txt4" style="font-size: 100%;">
+							مشاهده امتیازها
+							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 p-b-30">
+					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<img src=" {% static 'images/our-story-01.jpg' %} " alt="IMG-OUR">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Intro -->
+	<section class="section-intro">
+		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url( {% static 'images/bg-intro-01.jpg' %} );">
+			<span class="tit2 p-l-15 p-r-15">
+				...فن-جو شوید
+			</span>
+
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+				Fanjou
+			</h3>
+		</div>
+
+		<div class="content-intro bg-white p-t-77 p-b-133">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src=" {% static 'images/intro-01.jpg' %} " alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-10 t-right">
+									آموزش پایتون
+								</h4></a>
+
+								<p class="m-b-20 t-right">
+									پایتون یک نرم افزار برنامه نویسی قوی مناسب برای بسیاری از رشته ها است . یک زبان برنامه‌نویسی تفسیری، سطح بالا، و همه منظوره است.  فلسفه اصلی طراحی پایتون «خوانایی بالای کد» می‌باشد.
+								</p>
+
+								<a href="#" class="txt4">
+									مطالعه بیشتر
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src=" {% static 'images/intro-02.jpg' %} " alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-10 t-right">
+									فناوری نانو
+								</h4></a>
+
+								<p class="m-b-20 t-right">
+									موضوع اصلی آن نیز مهار ماده یا دستگاه‌های در ابعاد کمتر از یک میکرومتر، معمولاً حدود ۱ تا ۱۰۰ نانومتر است. وجه منحصر به فرد فناوری نانو داشتن عناصری به نام نانومواد و نانوساختار است.
+								</p>
+
+								<a href="#" class="txt4">
+									مطالعه بیشتر
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src=" {% static 'images/intro-04.jpg' %} " alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-10 t-right">
+									نرم افزار هایسیس
+								</h4></a>
+
+								<p class="m-b-20 t-right">
+									این نرم افزار در زمینه مدل سازی و شبیه سازی فرآیند های پالایشگاهی و پتروشیمی و
+سایر فرآیند های شیمیایی در صنعت کاربرد دارد.
+								</p>
+
+								<a href="#" class="txt4">
+									مطالعه بیشتر
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our menu -->
+	<section class="section-ourmenu bg2-pattern p-t-115 p-b-120">
+		<div class="container">
+			<div class="title-section-ourmenu t-center m-b-22">
+				<span class="tit2 t-center">
+					آشنایی
+				</span>
+
+				<h3 class="tit5 t-center m-t-2">
+					با سایر حوزه ها
+				</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-6">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-01.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
+									Science
+								</a>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-05.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
+									Technology
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-13.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
+									Engineering
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-08.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
+									Math
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-10.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
+									Art
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src=" {% static 'images/our-menu-16.jpg' %} " alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
+									Physics
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- Event -->
+	<section class="section-event">
+		<div class="wrap-slick2">
+			<div class="slick2">
+				<div class="item-slick2 item1-slick2" style="background-image: url( {% static 'images/bg-event-01.jpg' %} );">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									رویداد های
+								</span>
+
+								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3" style="color: black;">
+									پیش رو
+								</h3>
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
+								<!-- Pic block2 -->
+								<a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url( {% static 'images/event-02.jpg' %} );">
+									<div class="time-event size10 txt6 effect1">
+										<span class="txt-effect1 flex-c-m t-center">
+											Contest on java programming
+										</span>
+									</div>
+								</a>
+
+								<!-- Text block2 -->
+								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
+									<h4 class="tit7 t-center m-b-10">
+										 برگزاری مسابقه از برنامه‌نویسی جاوا
+										
+										 در تاریخ ۳۱ مرداد ماه
+										
+									</h4>
+
+									<p class="t-center" >
+										با شرکت در مسابقه و کسب رتبه برتر امتیاز خود را افزایش دهید و از تخفیف های فوق العاده ما بهره مند شوید
+									</p>
+
+									<div class="flex-sa-m flex-w w-full m-t-40">
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 days">
+												25
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Days
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 hours">
+												12
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Hours
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 minutes">
+												59
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Minutes
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 seconds">
+												56
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Seconds
+											</span>
+										</div>
+									</div>
+
+									<a href="#" class="txt4 m-t-40">
+										مشاهده جزییات
+										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick2 item2-slick2" style="background-image: url( {% static 'images/bg-event-02.jpg' %} );">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									رویداد های
+								</span>
+
+								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3" style="color: black;">
+									پیش رو
+								</h3>
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
+								<!-- Pic block2 -->
+								<a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url( {% static 'images/event-06.jpg' %} );">
+									<div class="time-event size10 txt6 effect1">
+										<span class="txt-effect1 flex-c-m">
+											08:00 PM Tuesday - 21 November 2018
+										</span>
+									</div>
+								</a>
+
+								<!-- Text block2 -->
+								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
+									<h4 class="tit7 t-center m-b-10">
+										شروع برگزاری دوره جدید اتوکد
+
+									</h4>
+
+									<p class="t-center">
+										نرم‌افزاری است که برای ترسیم نقشه‌های مهندسی و صنعتی به کار می‌رود و کاربرد ترسیمی دارد. کاربران اتوکد امکان استفاده از محیط‌های دو بعدی و سه بعدی را دارند.
+									</p>
+
+									<div class="flex-sa-m flex-w w-full m-t-40">
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 days">
+												25
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Days
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 hours">
+												12
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Hours
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 minutes">
+												59
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Minutes
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 seconds">
+												56
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Seconds
+											</span>
+										</div>
+									</div>
+
+									<a href="#" class="txt4 m-t-40">
+										مشاهده جزییات
+										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+
+			<div class="wrap-slick2-dots"></div>
+		</div>
+	</section>
+
+	
+
+	<!-- Best Users -->
+	<section class="section-review p-t-115">
+		<!-- - -->
+		<div class="title-review t-center m-b-2">
+			<span class="tit2 p-l-15 p-r-15">
+				 مرور برترین امتیازها
+			</span>
+		</div>
+
+		<!-- - -->
+		<div class="wrap-slick3">
+			<div class="slick3">
+				<div class="item-slick3 item1-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src=" {% static 'images/avatar-01.jpg' %} " alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<h3 class="tit2 t-center p-l-15 p-r-15 p-t-3">
+									علی
+								</h3>
+								<p class="t-center txt12 size15 m-l-r-auto">
+									امتیاز    1399  
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									تهران ˗ ایران
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick3 item2-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src=" {% static 'images/avatar-04.jpg' %} " alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<h3 class="tit2 t-center p-l-15 p-r-15 p-t-3">
+									گیسو ن
+								</h3>
+								<p class="t-center txt12 size15 m-l-r-auto">
+									امتیاز   1300 
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									اصفهان ˗ ایران
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick3 item3-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src=" {% static 'images/avatar-05.jpg' %} " alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<h3 class="tit2 t-center p-l-15 p-r-15 p-t-3">
+									کسری شایسته
+								</h3>
+								<p class="t-center txt12 size15 m-l-r-auto">
+									    1295     امتیاز
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									تهران ˗ ایران
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick3-dots m-t-30"></div>
+		</div>
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						شبکه های اجتماعی
+					</h4>
+
+					<ul class="m-b-70 social_icons">
+						<li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+              <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+              <li><a class="fa fa-telegram" href="https://t.me/fanjou" title="Telegram" target="_blank"></a></li>
+					</ul>
+
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						لینک های دیگر
+					</h4>
+
+					<div class="m-b-25 footer-menu">
+						<li><a href=" {% static 'menu.html' %} "><i class="fa fa-angle-left"></i> همه دوره ها</a></li>
+						<li><a href=" {% static 'mycourses.html' %} "><i class="fa fa-angle-left"></i> دوره های من</a></li>
+						<li><a href=" {% static 'points.html' %} "><i class="fa fa-angle-left"></i> امتیازها</a></li>
+              			<li><a href=" {% static 'setting.html' %} "><i class="fa fa-angle-left"></i> تنظیمات</a></li>
+             
+					</div>
+
+					
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						کسب امتیاز
+					</h4>
+
+					<!-- Gallery footer -->
+					<div class="wrap-gallery-footer flex-w">
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-01.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-01.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-02.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-02.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-03.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-03.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-04.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-04.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-05.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-05.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-06.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-06.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-07.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-07.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-08.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-08.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-09.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-09.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-10.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-10.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-11.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-11.jpg' %} " alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href=" {% static 'images/photo-gallery-12.jpg' %} " data-lightbox="gallery-footer">
+							<img src=" {% static 'images/photo-gallery-thumb-12.jpg' %} " alt="GALLERY">
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src=" {% static 'images/icons/video-16-9.jpg' %} " alt="IMG"></div>
+				<div class="video-mo-01">
+					<!-- <iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/jquery/jquery-3.2.1.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/animsition/js/animsition.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/popper.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/select2/select2.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/moment.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/daterangepicker/daterangepicker.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/slick/slick.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'js/slick-custom.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/parallax100/parallax100.js' %} "></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/countdowntime/countdowntime.js' %} "></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src=" {% static 'vendor/lightbox2/js/lightbox.min.js' %} "></script>
+<!--===============================================================================================-->
+	<script src=" {% static 'js/main.js' %} "></script>
+
+</body>
+</html>
